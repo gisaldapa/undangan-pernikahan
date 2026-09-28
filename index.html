@@ -17,7 +17,11 @@
             --gold-dark: #b08d5c;
         }
 
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+            width: 100%;
+            overflow-x: hidden;
+        }
 
         body {
             margin: 0;
@@ -26,6 +30,8 @@
             background-color: #e9e4d8; 
             color: var(--text-dark);
             text-align: center;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         body.locked { overflow: hidden; height: 100vh; }
@@ -35,6 +41,7 @@
             width: 100%;
             max-width: 480px; 
             margin: 0 auto;
+            box-sizing: border-box;
             background-color: var(--bg-color);
             background-image: url('back4.jpeg');
             background-size: cover;
@@ -103,6 +110,7 @@
             top: 0; left: 50%;
             transform: translateX(-50%);
             width: 100%; max-width: 480px;
+            box-sizing: border-box;
             height: 100vh;
             background-image: url('back2.jpeg');
             background-size: cover;
@@ -140,6 +148,7 @@
             position: fixed; bottom: 0; left: 50%;
             transform: translateX(-50%);
             width: 100%; max-width: 480px;
+            box-sizing: border-box;
             background-color: rgba(255, 255, 255, 0.95);
             display: flex; justify-content: space-around;
             padding: 12px 0; box-shadow: 0 -4px 15px rgba(0,0,0,0.08);
